@@ -10,6 +10,11 @@ body{
     background: url(img/bg-1.jpg);
 }
 
+.container{
+    background: #000000af;
+    
+}
+
 .input-container,.movie-container,.before-movie-container{
     margin: 30px 50px 10px 50px;
 }
