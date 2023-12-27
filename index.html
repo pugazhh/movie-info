@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquary.css">
+</head>
+<body>
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+<div class="input-container">
+    <div class="input-box">
+        <input type="text" placeholder="enter the movie" id="input" onkeypress="eventctl(event)">
+        <button onclick="btnClick()">search</button>
+    </div>
+</div>
+<div class="movie-container" id="after">
+    <div class="movie-box">
+        <div class="movie-poster">
+            <div class="poster">
+            <img src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="" id="poster">
+            </div>
+        </div>
+    <div class="movie-info">
+        <h1>Title: <span id="title">RRR</span></h1>
+        <p>Released : <span id="date">25 mar 2012</span></p>
+        <p>Plot : <span id="plot">ksbsuwd weuhdedheuwhd duewhdediedjiddd</span></p>
+        <p>Genre : <span id="genre">action,comdy</span></p>
+        <p>Actors : <span id="actors">ram saran,kajal</span></p>
+        <p>Direator : <span id="director">lokesh kanagaraj</span></p>
+        <p>Language : <span id="lang">tamil,english</span></p>
+        <p>Box office : <span id="collection">$10,233,00</span></p>
+        <p>Rating : <span id="rating">7.8</span></p>
+        <p>Awards : <span id="awards">oscars</span></p>
+    </div>
+    <div onclick="cancel()" class="cancel">🗙</div>
+</div>
+</div>
+
+<div class="before-movie-container" id="before">
+    <div class="movie-img-container">
+        <div class="movie-img">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTQyZTBiMjAtZTNjZi00ZjU0LWFkMTQtMDE3Nzc1MjVmMTM4XkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_SX300.jpg" alt="" id="imgdata" name="Priscilla">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDk0ZmVmMTktOGNiNS00Yzg5LWIzZTAtNjUxZWZhZDljY2Y0XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_SX300.jpg" alt="" id="imgdata" name="leo">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkxM2FiYjctYjliYy00NjY2LWFmOTEtMWZiYWRjNjA4MGYxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" alt="" id="imgdata" name="Aquaman and the Lost Kingdom">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzFkNmZkMTctYjRhMS00ODZiLWFlNjQtZmZmN2IzMDJlNmVkXkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_SX300.jpg" alt="" id="imgdata" name="jailer">
+            <img src="https://m.media-amazon.com/images/M/MV5BM2UwMjRmNDEtODkxMi00ODg3LTkxODQtZDJkYTNkMGQ5N2Y1XkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_SX300.jpg" alt="" id="imgdata" name="800">
+            <img src="https://m.media-amazon.com/images/M/MV5BNjE1NDAwNGUtNDlkNi00ZDVlLTg2NDEtNmYyYjllODcyYWZjXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_SX300.jpg" alt="" id="imgdata" name="Chandramukhi 2">
+            <img src="https://m.media-amazon.com/images/M/MV5BMWZkMjE2OTktOGQ4Zi00OWQ1LTgwNjAtZTFjOGExYWQyMTU5XkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_SX300.jpg" alt="" id="imgdata" name="Chithha">
+            <img src="https://m.media-amazon.com/images/M/MV5BN2ZlZWZjOTAtN2ZhNC00M2JiLTk1NjEtYTczNTYwNDYxNTVlXkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_SX300.jpg" alt="" id="imgdata" name="Mark Antony">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTY1ZDQzNzQtZGM1Yy00YjRhLTliYmMtOGM2OWFlYTRjOTc2XkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_SX300.jpg" alt="" id="imgdata" name="loki">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjZmYjJlYzUtZWM1My00YmUxLTlkNjEtYmYwMzIzOWE5YmRiXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_SX300.jpg" alt="" id="imgdata" name="Rebel Moon">
+            <img src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="" id="imgdata" name="RRR">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzZiMTVmNmQtMzIzOC00OGM5LWJjNGEtZTQ5YzJlMTQ2YTk3XkEyXkFqcGdeQXVyMTE2OTM0MDQ1._V1_SX300.jpg" alt="" id="imgdata" name="Maestro">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmE5MmM2ZGEtNTVlNC00M2Q3LTliMjMtMzg5YjUyMjliZWIzXkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_SX300.jpg" alt="" id="imgdata" name="The Nun II ">
+            <img src="https://m.media-amazon.com/images/M/MV5BZGJkMDUwZWQtYTMzMS00NTg5LWE1ZTYtOTVhMDI4NGI1YjMyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg" alt="" id="imgdata" name="The Killer">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="" id="imgdata" name="iron man">
+            <img src="https://m.media-amazon.com/images/M/MV5BZTBmNmM4ZTUtZTY4Ni00YzlhLWE0MDQtZGE0OWRlM2IwNzgyXkEyXkFqcGdeQXVyMTY0MDk0NjE3._V1_SX300.jpg" alt="" id="imgdata" name="Irugapatru">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjRjYWIxZjYtMDY0OS00ODE1LTk2ZWMtZjgwOGNiNjg0ZGFkXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="" id="imgdata" name="remo">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTBjMmFjYTQtNjcyZC00YjQxLTliYTAtZGM5MzFkMTcxMWM2XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_SX300.jpg" alt="" id="imgdata" name="Iraivan">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg" alt="" id="imgdata" name="thor">
+            <img src="https://m.media-amazon.com/images/M/MV5BZWU4ZDI5OGEtOTdmZS00MmNiLWIzNjQtZGM1MGE0M2UzYTczXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="" id="imgdata" name="web">
+            <img src="https://m.media-amazon.com/images/M/MV5BYmZkYWRlNWQtOGY0Zi00MWZkLWJiZTktNjRjMDY4MTU2YzAyXkEyXkFqcGdeQXVyMzYzNzc1NjY@._V1_SX300.jpg" alt="" id="imgdata" name="spider man">
+            <img src="https://m.media-amazon.com/images/M/MV5BMWE0NjAzYzctMDc1OC00MWE0LTg4NzctOGMzMTAxN2ZjMDNkXkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_SX300.jpg" alt="" id="imgdata" name="Farhana">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjAzZjZiMmQtMDZmOC00NjVmLTkyNTItOGI2Mzg4NTBhZTA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="" id="imgdata" name="ms dhoni">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjI2Njg2Y2EtZjgwMC00ZGVkLWJmMWYtYjVhYjk2ZTkwNWE1XkEyXkFqcGdeQXVyMTMxMjA5NDU1._V1_SX300.jpg" alt="" id="imgdata" name="K.G.F">
+        </div>
+    </div>
+    
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
