@@ -8,39 +8,44 @@
     <link rel="stylesheet" href="mediaquary.css">
 </head>
 <body>
+    <!-- loader -->
     <div class="container">
     <div class="loader-wrapper" id="loader-wrapper">
         <div class="loader"></div>
       </div>
+
+      <!-- search-bar -->
 <div class="input-container">
     <div class="input-box">
-        <input type="text" placeholder="enter the movie" id="input" onkeypress="eventctl(event)">
+        <input type="text" placeholder="Enter The Movie... (EX:Leo)" id="input" onkeypress="eventctl(event)">
         <button onclick="btnClick()">search</button>
     </div>
 </div>
+<!-- movie-container -->
 <div class="movie-container" id="after">
     <div class="movie-box">
         <div class="movie-poster">
             <div class="poster">
-            <img src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="" id="poster">
+            <img src="" alt="" id="poster">
             </div>
         </div>
     <div class="movie-info">
-        <h1>Title: <span id="title">RRR</span></h1>
-        <p>Released : <span id="date">25 mar 2012</span></p>
-        <p>Plot : <span id="plot">ksbsuwd weuhdedheuwhd duewhdediedjiddd</span></p>
-        <p>Genre : <span id="genre">action,comdy</span></p>
-        <p>Actors : <span id="actors">ram saran,kajal</span></p>
-        <p>Direator : <span id="director">lokesh kanagaraj</span></p>
-        <p>Language : <span id="lang">tamil,english</span></p>
-        <p>Box office : <span id="collection">$10,233,00</span></p>
-        <p>Rating : <span id="rating">7.8</span></p>
-        <p>Awards : <span id="awards">oscars</span></p>
+        <h1>Title: <span id="title"></span></h1>
+        <p>Released : <span id="date"></span></p>
+        <p>Plot : <span id="plot"></span></p>
+        <p>Genre : <span id="genre"></span></p>
+        <p>Actors : <span id="actors"></span></p>
+        <p>Direator : <span id="director"></span></p>
+        <p>Language : <span id="lang"></span></p>
+        <p>Box office : <span id="collection"></span></p>
+        <p>Rating : <span id="rating"></span></p>
+        <p>Awards : <span id="awards"></span></p>
     </div>
     <div onclick="cancel()" class="cancel">🗙</div>
 </div>
 </div>
 
+<!-- before-movie-container -->
 <div class="before-movie-container" id="before">
     <div class="movie-img-container">
         <div class="movie-img">
@@ -73,6 +78,7 @@
     
 </div>
 </div>
+
   <script src="script.js"></script>
 </body>
 </html>
